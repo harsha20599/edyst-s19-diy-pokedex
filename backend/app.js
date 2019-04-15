@@ -8,6 +8,11 @@ const pokemons = require('./data.json');
 // GET /api/pokemon/:id
 app.get('/api/pokemon/:id',(req,res)=>{
 
+  if(! pokemons[req.params.id]){
+    res.status(404).send({error : "Pokemon not found"});
+    return;
+  }
+
   var result = {
     "pokemon" : {
       id : req.params.id,
