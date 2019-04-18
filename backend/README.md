@@ -6,7 +6,7 @@ This repository contains pokemon API service. Where, the GET request on `/api/po
     localhost:8006/api/pokemon/25
   ```
   returns this data 
-  ```json
+  ```javascript
   {
     "pokemon": {
         "id": "25",
