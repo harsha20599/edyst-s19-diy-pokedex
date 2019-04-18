@@ -1,6 +1,7 @@
 # Pokedex
 This repository contains pokemon API service. Where, the GET request on `/api/pokemon/:id` on port `8006` returns the pokemon details based on the id.
-  on running this API call,
+  
+  On running this API call,
   ```url
     localhost:8006/api/pokemon/25
   ```
