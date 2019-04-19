@@ -17,7 +17,7 @@ app.get('/api/pokemon/:id',(req,res)=>{
   // Pokemon data to be returned to the client
   var result = {
     "pokemon" : {
-      id : req.params.id,
+      id : parseInt(req.params.id),
       name : pokemons[req.params.id].name,
       sprite : pokemons[req.params.id].sprite
     }
